@@ -17,8 +17,8 @@ int main(){
         /*if(resp == 1){
             //encomendar um livro
              printf(" Digite o nome do aluno:\n");
-             char nome[100];
-             scanf("%s", &nome);
+             char * nome = malloc(sizeof(char));
+             scanf(" %[^\n]s", nome);
              //... matricula e descricao..
              //criar um funcao para gerar id unico (:D)
             //add_abb(id, nome, matricula, descricao);
@@ -60,6 +60,3 @@ int main(){
     
     return 0;
 }
-
-
-
